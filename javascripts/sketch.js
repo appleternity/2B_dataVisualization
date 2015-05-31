@@ -15,7 +15,7 @@ var modeButton;
 var mode;
 
 function preload() {
-    map = loadImage('/images/map-2.png');
+    map = loadImage('./images/map-2.png');
 }
 
 function setup() {

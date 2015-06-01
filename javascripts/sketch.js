@@ -90,6 +90,8 @@ function draw() {
 }
 
 function updateTimeZoneColor() {
+    if(mouseX > myWidth)
+        return;
     tempX = parseInt(mouseX/smallWidth);
     for(var i = 0; i < num_timezone; i++) {
         timezone_color[i] = 0;

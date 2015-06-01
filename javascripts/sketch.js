@@ -22,7 +22,7 @@ function setup() {
     myWidth = windowWidth - 20;
     //myHeight = windowHeight - 20;
     myHeight = map.height*myWidth/map.width;
-    if(myHeight > widowHeight - 20) {
+    if(myHeight > windowHeight - 20) {
         myHeight = windowHeight - 20;
         myWidth = map.width*myHeight/map.height;
     }

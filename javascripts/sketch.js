@@ -45,6 +45,7 @@ function setup() {
     console.log(data);
 
     // preprocess data
+    /*
     for(var i = 0; i < data[currentTime].length; i++) {
         //console.log(data[currentTime][i].x);
         data[currentTime][i].x = data[currentTime][i].x * myWidth;
@@ -59,7 +60,7 @@ function setup() {
         if(data[currentTime][i].c == null) {
             data[currentTime][i].c = color(random(255), random(255), random(255));
         }
-    }
+    }*/
 }
 
 function draw() {
@@ -89,7 +90,7 @@ function draw() {
     //fill(0);
     var xx, yy, rr;
     //console.log(data[currentTime]);
-    /*
+    
     for(var i = 0; i < data[currentTime].length; i++) {
         //console.log(data[currentTime][i].x);
         xx = data[currentTime][i].x * myWidth;
@@ -98,8 +99,8 @@ function draw() {
         if(rr < 5) {
             rr = 5;
         }
-        else if (rr > 150){
-            rr = 150;
+        else if (rr > 50){
+            rr = 50;
         }
         if(data[currentTime][i].c == null) {
             data[currentTime][i].c = color(random(255), random(255), random(255));
@@ -107,12 +108,13 @@ function draw() {
         fill(data[currentTime][i].c);
         stroke(data[currentTime][i].c);
         ellipse(xx, yy, rr, rr);
-    }*/
+    }
+    /*
     for(var i = 0; i < data[currentTime].length; i++) {
         fill(data[currentTime][i].c);
         stroke(data[currentTime][i].c);
         ellipse(data[currentTime][i].x, data[currentTime][i].y, data[currentTime][i].r, data[currentTime][i].r);
-    }
+    }*/
 
 }
 

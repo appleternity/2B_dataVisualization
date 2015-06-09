@@ -50,9 +50,9 @@ function setup() {
             //console.log(data[currentTime][i].x);
             data[currentTime][i].x = data[currentTime][i].x * myWidth;
             data[currentTime][i].y = data[currentTime][i].y * myHeight;
-            data[currentTime][i].r = data[currentTime][i].r / 20;
-            if(data[currentTime][i].r < 5) {
-                data[currentTime][i].r = 5;
+            data[currentTime][i].r = Math.pow(data[currentTime][i].r, 1.0/3) * 10;
+            if(data[currentTime][i].r < 4) {
+                data[currentTime][i].r = 4;
             }
             else if (data[currentTime][i].r > 150){
                 data[currentTime][i].r = 150;

@@ -53,8 +53,8 @@ function setup() {
         if(data[currentTime][i].r < 5) {
             data[currentTime][i].r = 5;
         }
-        else if (data[currentTime][i].r > 150){
-            data[currentTime][i].r = 150;
+        else if (data[currentTime][i].r > 50){
+            data[currentTime][i].r = 50;
         }
         if(data[currentTime][i].c == null) {
             data[currentTime][i].c = color(random(255), random(255), random(255));

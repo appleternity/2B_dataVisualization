@@ -45,7 +45,7 @@ function setup() {
     console.log(data);
 
     // preprocess data
-    /*
+    
     for(var i = 0; i < data[currentTime].length; i++) {
         //console.log(data[currentTime][i].x);
         data[currentTime][i].x = data[currentTime][i].x * myWidth;
@@ -60,7 +60,7 @@ function setup() {
         if(data[currentTime][i].c == null) {
             data[currentTime][i].c = color(random(255), random(255), random(255));
         }
-    }*/
+    }
 }
 
 function draw() {
@@ -91,6 +91,7 @@ function draw() {
     var xx, yy, rr;
     //console.log(data[currentTime]);
     
+    /*
     for(var i = 0; i < data[currentTime].length; i++) {
         //console.log(data[currentTime][i].x);
         xx = data[currentTime][i].x * myWidth;
@@ -108,13 +109,13 @@ function draw() {
         fill(data[currentTime][i].c);
         stroke(data[currentTime][i].c);
         ellipse(xx, yy, rr, rr);
-    }
-    /*
+    }*/
+    
     for(var i = 0; i < data[currentTime].length; i++) {
         fill(data[currentTime][i].c);
         stroke(data[currentTime][i].c);
         ellipse(data[currentTime][i].x, data[currentTime][i].y, data[currentTime][i].r, data[currentTime][i].r);
-    }*/
+    }
 
 }
 

@@ -128,6 +128,7 @@ function updateTimeZoneColor() {
         timezone_color[i] = 0;
     }
     currentTime = tempX;
+    console.log(currentTime);
     //timezone_color[tempX] = 255;
     var currentNum;
     for(var i = 0; i < num_timezone; i++) {
